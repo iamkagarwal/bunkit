@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:title="Delete this subject"
+    android:id="@+id/deleteSubject"/>
+
+<item
+    android:title="edit"
+    android:id="@+id/edit"/>
+</menu>

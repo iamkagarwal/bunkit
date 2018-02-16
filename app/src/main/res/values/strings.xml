@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Bunk It</string>
+    <string name="average_percent_display">00.00%</string>
+    <string name="total_bunked_display">00</string>
+    <string name="name_text">Name</string>
+    <string name="min_percent_text">Minimum % required</string>
+    <string name="total_classes_text">Total classes</string>
+    <string name="bunked_classes_text">Bunked classes</string>
+    <string name="cancel">CANCEL</string>
+    <string name="submit">SUBMIT</string>
+    <string name="delete_all_button">Delete all</string>
+    <string name="add_subject_button">Add subject</string>
+    <string name="bunked_classes">Bunked Classes</string>
+    <string name="total_classes">Total Classes</string>
+    <string name="minimum_percent">Minimum Percentage:</string>
+    <string name="minimum_percent_hint">Eg:75</string>
+    <string name="total_classes_hint">Eg:15</string>
+    <string name="bunked_classes_hint">Eg:13</string>
+    <string name="name_hint">Subject Name</string>
+</resources>

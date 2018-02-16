@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:title="@string/add_subject_button"
+    app:showAsAction="always"
+    android:id="@+id/addButton"
+    android:visible="true"
+
+    />
+    <item
+        android:title="@string/delete_all_button"
+        app:showAsAction="collapseActionView"
+        android:id="@+id/deleteButton"
+
+        />
+</menu>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:id="@+id/subjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:text="SUBJECT"
+        android:layout_above="@+id/bunkedClassesText"
+        android:layout_alignLeft="@+id/bunkedClassesText"
+        android:layout_alignStart="@+id/bunkedClassesText"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAllCaps="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="23.10%"
+        android:id="@+id/percentDisplay"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:layout_alignStart="@+id/percentageText"
+        android:layout_below="@+id/percentageText" />
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bunked_classes"
+        android:textSize="20dp"
+        android:layout_above="@+id/bunkedClassInc"
+
+        android:layout_alignLeft="@+id/bunkedClassDec"
+        android:layout_alignStart="@+id/bunkedClassDec"
+
+        android:layout_marginBottom="13dp"
+        android:id="@+id/bunkedClassesText" />
+<Button
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+android:background="@drawable/web_hi_res_green"
+
+    android:text="+"
+    android:textSize="30dp"
+    android:id="@+id/bunkedClassInc"
+    android:layout_alignBottom="@+id/bunked"
+    android:layout_toRightOf="@+id/percentageText"
+    android:layout_toEndOf="@+id/percentageText"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:textSize="35dp"
+
+        android:id="@+id/bunked"
+        android:layout_above="@+id/totalDec"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+
+        />
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/bunkedClassDec"
+        android:text="-"
+        android:textSize="30dp"
+android:background="@drawable/web_hi_res"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_below="@+id/bunked"
+        android:layout_alignLeft="@+id/bunkedClassDec"
+        android:layout_alignStart="@+id/bunkedClassDec"
+        android:layout_marginTop="37dp"
+        android:id="@+id/displayView1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignBottom="@+id/displayView2"
+        android:layout_toRightOf="@+id/displayView2"
+        android:layout_toEndOf="@+id/displayView2"
+        android:textSize="20dp"
+
+        android:id="@+id/displayView3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/displayView1"
+        android:layout_alignBottom="@+id/displayView1"
+        android:layout_toRightOf="@+id/displayView1"
+        android:id="@+id/displayView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:id="@+id/displayView4"
+        android:layout_below="@+id/displayView3"
+        android:layout_toEndOf="@+id/displayView1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_classes"
+        android:textSize="20dp"
+        android:layout_above="@+id/totalInc"
+        android:layout_alignLeft="@+id/totalDec"
+
+        android:layout_alignStart="@+id/totalDec"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/textView" />
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/bunkedClassDec"
+        android:layout_alignLeft="@+id/bunkedClassDec"
+        android:layout_alignStart="@+id/bunkedClassDec"
+        android:text="-"
+        android:background="@drawable/web_hi_res"
+        android:textSize="30dp"
+        android:layout_marginTop="132dp"
+
+
+        android:id="@+id/totalDec" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="00"
+
+        android:id="@+id/total"
+        android:layout_above="@+id/percentageText"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="+"
+        android:textSize="30dp"
+        android:background="@drawable/web_hi_res_green"
+        android:id="@+id/totalInc"
+        android:layout_above="@+id/percentageText"
+        android:layout_toEndOf="@+id/percentageText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minimum_percent"
+        android:textSize="20dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/percentageText"
+        android:layout_below="@+id/totalDec"
+        android:layout_alignStart="@+id/totalDec" />
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="5dip"
+        android:minHeight="5dip"
+        android:visibility="visible"
+        android:progressTint="@android:color/white"
+        android:layout_above="@+id/subjectName"
+        android:layout_alignStart="@+id/subjectName"
+        android:layout_alignEnd="@+id/bunkedClassInc">
+    </ProgressBar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000%"
+        android:textSize="20dp"
+        android:id="@+id/percentage"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/percentageText"
+        android:layout_alignBottom="@+id/percentageText"
+        android:layout_toRightOf="@+id/percentageText"
+        android:layout_toEndOf="@+id/percentageText"
+        android:textColor="@android:color/holo_blue_dark"
+        />
+
+</RelativeLayout>
+</ScrollView>

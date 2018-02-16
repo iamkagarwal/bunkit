@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:context="com.kartikdev.kartik.bunkit.MainActivity">
+
+            <TextView
+                android:id="@+id/percentageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="35dp"
+                android:paddingBottom="5dp"
+                android:text="    PERCENTAGE\n          (total)"
+                android:textColorHint="@android:color/black"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/bunkText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingRight="60dp"
+                android:text="BUNKED\n  (total)"
+                android:textColorHint="@android:color/black"
+                android:textSize="17dp"
+                android:layout_alignTop="@+id/percentageText"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:id="@+id/avgPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="@string/average_percent_display"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="30dp"
+                android:layout_below="@+id/percentageText"
+                android:layout_alignEnd="@+id/percentageText" />
+
+            <TextView
+                android:id="@+id/divider"
+                android:layout_width="2dp"
+                android:layout_height="100dp"
+                android:layout_alignBaseline="@+id/bunkText"
+                android:layout_alignBottom="@+id/bunkText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:background="@android:color/white"
+                android:text=""
+                android:textColor="@android:color/white" />
+
+
+            <TextView
+                android:id="@+id/totalBunks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_bunked_display"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="30dp"
+                android:layout_alignBaseline="@+id/avgPercent"
+                android:layout_alignBottom="@+id/avgPercent"
+                android:layout_alignStart="@+id/bunkText"
+                android:layout_marginStart="13dp" />
+        </RelativeLayout>
+
+        <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+            >
+
+        <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</ScrollView>
+</LinearLayout>
+

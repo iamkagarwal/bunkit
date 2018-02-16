@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/subjectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_text"
+        android:textSize="25dp"
+
+        android:layout_alignStart="@+id/name" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_hint"
+        android:id="@+id/name"
+
+        android:layout_below="@+id/subjectText"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/submit" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/min_percent_text"
+        android:textSize="25dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView2"
+
+        android:layout_below="@+id/name"
+        android:layout_alignStart="@+id/min" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/minimum_percent_hint"
+
+        android:inputType="number"
+        android:id="@+id/min"
+
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bunked_classes_text"
+        android:textSize="25dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/textView3"
+
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="24dp"
+        android:layout_below="@+id/min"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bunkedClasses"
+        android:hint="@string/bunked_classes_hint"
+        android:inputType="number"
+
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="11dp"
+        android:layout_alignStart="@+id/textView3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_classes_text"
+        android:textSize="25dp"
+
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/bunkedClasses"
+        android:layout_alignStart="@+id/bunkedClasses" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/total_classes_hint"
+        android:id="@+id/totalClasses"
+        android:inputType="number"
+
+        android:layout_alignStart="@+id/bunkedClasses"
+        android:layout_below="@+id/textView4" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/totalClasses"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/cancel"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/totalClasses" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/submit"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView2" />
+
+
+</RelativeLayout>
+    </ScrollView>

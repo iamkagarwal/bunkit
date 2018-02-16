@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/icon"
+        android:layout_above="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text=""
+        android:background="@drawable/bunk"
+        android:textSize="80dp"
+        android:textColor="@color/darkest"
+        android:typeface="normal"
+        android:layout_marginBottom="54dp"
+        android:layout_above="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/it"
+        android:id="@+id/textView6"
+        android:layout_marginBottom="57dp"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Kartik Agarwal"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:typeface="serif"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView8" />
+
+</RelativeLayout>
